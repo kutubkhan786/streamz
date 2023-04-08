@@ -37,7 +37,7 @@ const Navbar = () => {
             />
           </a>
         </Link>
-        <p className='p-4 font-bold hover:text-[#9147ff]'>Browse</p>
+        <p className='p-4 font-bold hover:text-[#9147ff] transition-colors duration-300 hover:scale-105'>Stream.io</p>
         <div className='p-4'>
           <Menu as='div' className='relative text-left'>
             <div className='flex'>
@@ -55,7 +55,7 @@ const Navbar = () => {
               leaveFrom='transform opacity-100 scale-100'
               leaveTo='transform opacity-0 scale-95'
             >
-              <Menu.Items className='origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-[#0e0e10] ring-1 ring-white ring-opacity-5 focus:outline-none'>
+              <Menu.Items className='origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-[grey] ring-1 ring-white ring-opacity-5 focus:outline-none'>
                 <div className='py-1'>
                   <Menu.Item>
                     {({ active }) => (

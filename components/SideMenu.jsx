@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { rec_channels, top_channels } from '../data/mock-data';
 import { RiMovieLine } from 'react-icons/ri';
@@ -6,7 +7,7 @@ import Image from 'next/image';
 
 const SideMenu = () => {
   return (
-    <div className='fixed w-14 sm:w-16 xl:w-[15rem] h-screen p-2 bg-[#0e0e10]'>
+    <div className='fixed w-14 sm:w-16 xl:w-[15rem] h-screen p-2'>
       <div>
         <p className='hidden xl:flex uppercase font-bold text-sm pb-4'>
           Recommended Channels
@@ -16,8 +17,8 @@ const SideMenu = () => {
         </p>
       </div>
       {rec_channels.map((item, index) => (
-        <div key={index} className='inline-flex items-center w-full py-[2px]'>
-          <div>
+        <div key={index} className='flex flex-col sm:flex-row items-center sm:items-start w-full py-[2px]'>
+          <div className='sm:pr-2'>
             <Image src={item.avatar} width='50' height='50' alt='/' />
           </div>
           <div className='hidden xl:flex justify-between w-full'>
@@ -41,8 +42,8 @@ const SideMenu = () => {
         </p>
       </div>
       {top_channels.map((item, index) => (
-        <div key={index} className='inline-flex items-center w-full py-[2px]'>
-          <div>
+        <div key={index} className='flex flex-col sm:flex-row items-center sm:items-start w-full py-[2px]'>
+          <div className='sm:pr-2'>
             <Image src={item.avatar} width='50' height='50' alt='/' />
           </div>
           <div className='hidden xl:flex justify-between w-full'>
