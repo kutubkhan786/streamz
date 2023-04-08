@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 const LiveChannelItem = ({ img, profile_img, title, user, game, }) => {
   const router = useRouter();
 
-  const handleItemClick=()=>{
+  const handleItemClick = () => {
     console.log("Item clicked");
     router.push('/abc');
   };

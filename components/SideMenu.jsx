@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { rec_channels, top_channels } from '../data/mock-data';
 import { RiMovieLine } from 'react-icons/ri';

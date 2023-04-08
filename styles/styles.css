@@ -38,19 +38,83 @@ footer {
   text-align: center;
   width: 100%;
   height: 2.5rem;
+  margin-top: 17em;
 }
 
 footer p {
   color: #ccc;
 }
-.liveVideo1 {
-  height: 50vh;
-  width: 50vw;
+
+body,
+html {
+  height: 100%;
+}
+.container {
+  position: relative;
+  top: 57px;
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 57px);
+}
+
+.Chat {
+  flex: 1;
   background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.Videos {
+  flex: 2;
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 20px;
+  max-height: 100vh;
+  height: 70%;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  width: 100%;
+}
+.messages input[type="text"] {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid black;
+}
+
+.message-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.message-form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: black;
+  border: 1px solid black;
+}
+
+.message-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.message-form button:hover {
+  background-color: #4e9be9;
+  color: black;
 }

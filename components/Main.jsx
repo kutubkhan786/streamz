@@ -8,11 +8,11 @@ import Footer from './Footer'
 const Main = () => {
   return (
     <div className='absolute left-[64px] xl:left-[220px]'>
-        <Hero />
-        <LiveChannels />
-        <IconBar />
-        <Categories />
-        <Footer/>
+      <Hero />
+      <LiveChannels />
+      <IconBar />
+      <Categories />
+      <Footer />
     </div>
   )
 }

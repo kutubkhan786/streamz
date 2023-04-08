@@ -1,11 +1,18 @@
-import React from 'react'
+import React from 'react';
+import SideMenu from '../components/SideMenu';
+import Footer from '../components/Footer'
+import Videos from './Videos';
+import Chat from './Chat';
 
 export default function abc() {
   return (
     <>
-    <div className="liveVideo1">
-      
-    </div>
+      <div className="container">
+        <SideMenu />
+        <Videos />
+        <Chat />
+      </div>
+      <Footer />
     </>
   )
 }
