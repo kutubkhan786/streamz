@@ -1,12 +1,13 @@
-import { getSession } from "next-auth/react";
-import Layout from '../components/Layout';
-
-export default function Home() {
+import React from "react";
+import Hero from "../components/Hero";
+const HelloWorld = () => {
   return (
     <div>
-      <Layout />
+      <h1>Hello World!</h1>
+      <p>Welcome to React</p>
+      <Hero />
     </div>
-  )
-}
+  );
+};
 
-
+export default HelloWorld;
