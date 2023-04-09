@@ -1,4 +1,3 @@
-# streamz
+# streamz 
 
-
-this will be commming soon
+this website can be accesed by going to endpoint /users /account 
