@@ -27,7 +27,7 @@ const LiveChannels = (props) => {
           title="CHARITY STREAM! Any support is ap..."
           user="Natt"
           game="Valorant"
-          
+
         />
         <LiveChannelItem
           img={Live2}

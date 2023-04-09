@@ -1,9 +1,15 @@
 import Image from 'next/image';
 import React from 'react';
+import { useRouter } from "next/router";
+
 
 const CategoriesItem = ({ img, title, viewers, tag1, tag2 }) => {
+  const router = useRouter();
+  const handleItemClick=()=>{
+    router.push('/abc');
+  }
   return (
-    <div className='p-2'>
+    <div className='p-2' onClick={handleItemClick}>
       <Image className="cate-img" src={img} width='261' height='350' alt='/' />
       <div>
         <p className='font-bold'>{title}</p>
